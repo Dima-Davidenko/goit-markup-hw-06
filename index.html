@@ -147,7 +147,6 @@
                 <h3 class="title">Мобільні додатки</h3>
               </div>
             </li>
-            </li>
             <li class="item">
               <img
                 class="img"
@@ -158,7 +157,6 @@
               <div class="wrapper">
                 <h3 class="title">Дизайнерські рішення</h3>
               </div>
-            </li>
             </li>
           </ul>
         </div>
@@ -376,7 +374,7 @@
     <!-- Site footer -->
     <footer class="footer">
       <div class="container">
-        <div class="wrapper">
+        <div class="wrapper contacts">
           <!-- Web-studio Logo -->
           <a class="link logo" href="./index.html"><span class="accent">Web</span>Studio</a>
           <!-- Web-studio contacts -->
@@ -429,16 +427,30 @@
             </li>
           </ul>
         </div>
+        <div class="wrapper subscribe">
+          <form class="form-subscribe">
+            <label class="label-email" for="email">Підпишіться на розсилку</label>
+            <input class="input-email" type="email" name="e-mail" id="email" placeholder="E-mail" />
+            <button class="button primary" type="submit">
+              Підписатися
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- Modal window backdrop -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal" >
-        <button  class="icon-close" data-modal-close><svg width="30" height="30">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg></button>
-              </div>
+      <div class="modal">
+        <button class="icon-close" data-modal-close>
+          <svg width="30" height="30">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
