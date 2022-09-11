@@ -714,15 +714,29 @@
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
-
+  transform: translateX(0);
   transition: transform 1000ms var(--trans-funct), opacity 1000ms var(--trans-funct);
   transform-origin: top left;
 }
 .backdrop.is-hidden {
-  transform: scale(0);
+  /* transform: scale(0); */
+  /* transform: translate(-100%); */
+  animation: modal 2000ms var(--trans-funct) forwards;
   opacity: 0;
   pointer-events: none;
   transform-origin: top right;
+  transition: transform 1000ms var(--trans-funct), opacity 1000ms var(--trans-funct);
+}
+@keyframes modal {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 .backdrop .modal {
   position: absolute;
