@@ -1,0 +1,40 @@
+// Footer styles
+.footer {
+  padding: 60px 0;
+
+  background-color: $sec-bkg-clr;
+}
+.footer__container {
+  @extend .container;
+  display: flex;
+}
+.footer__section {
+  margin-right: 70px;
+  &:nth-child(2) {
+    padding-top: 12px;
+  }
+}
+.logo--footer {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: $sec-text-clr;
+}
+// Footer section social networks
+.footer__subscribe-title {
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+  font-size: $sec-fnt-size;
+  line-height: 1.14;
+  color: $sec-text-clr;
+}
+.social-net-list--footer {
+  margin: 20px 0 0 0;
+}
+.social-net-list__link--footer {
+  color: $sec-text-clr;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}

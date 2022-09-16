@@ -1,0 +1,47 @@
+.button {
+  display: inline-block;
+  min-width: 73px;
+  min-height: 38px;
+  padding: 0px 22px;
+
+  font-family: inherit;
+  font-weight: $prime-fnt-weight;
+  font-size: $primary-fnt-size;
+  line-height: 1.62;
+  letter-spacing: $prime-letr-space;
+
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: box-shadow 250ms $transform-funct, color 250ms $transform-funct,
+    background-color 250ms $transform-funct;
+
+  &:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  &:focus {
+    outline: 1px solid $primary-accent-clr;
+  }
+}
+
+.button--passive {
+  color: $title-text-clr;
+
+  background-color: $sec-accent-clr;
+
+  &:hover,
+  &:focus {
+    color: $sec-text-clr;
+
+    background-color: $primary-accent-clr;
+    outline: none;
+  }
+}
+.button--active {
+  color: $sec-text-clr;
+
+  background-color: $primary-accent-clr;
+}

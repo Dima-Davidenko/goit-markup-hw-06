@@ -1,0 +1,25 @@
+// Modal window, centered x y in the middle of parent container
+.modal-window {
+  position: relative;
+  width: 528px;
+  min-height: 581px;
+  margin: auto;
+  background-color: $primary-bkg-clr;
+}
+// Button close, top right corner, styles reseted, use svg icon. Hover, focus effect
+.modal-window__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  color: #000000;
+  @include hov-foc-effect-color;
+}
+.modal-window__icon-close {
+  fill: currentColor;
+}
