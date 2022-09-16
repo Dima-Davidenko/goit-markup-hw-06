@@ -299,7 +299,7 @@
     <!-- Site footer -->
     <footer class="footer">
       <div class="footer__container">
-        <div class="footer__section">
+        <div class="footer__section footer__section--contacts">
           <!-- Web-studio Logo -->
           <a class="logo logo--footer" href="./index.html"
             ><span class="logo__accent">Web</span>Studio
@@ -324,7 +324,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer__section">
+        <div class="footer__section footer__section--social-nets">
           <h3 class="footer__subscribe-title">Приєднуйтесь</h3>
           <ul class="social-net-list social-net-list--footer">
             <li class="item">
@@ -368,6 +368,22 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer__section footer__section--subscribe-form">
+          <form class="subscribe-form">
+            <label class="subscribe-form__label">
+              <h4 class="subscribe-form__title">Підпишіться на розсилку</h4>
+              <div class="subscribe-form__wrapper">
+                <input class="subscribe-form__input" type="email" placeholder="E-mail" />
+              </label>
+              <button class="button button--active button--subscribe-form">
+                Підписатися
+                <svg class="button__icon button__icon--end" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+              </div>
+          </form>
         </div>
       </div>
     </footer>
